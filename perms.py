@@ -22,7 +22,7 @@ def sentence_permutations(sentence: str):
 
         with open("output.txt", "w") as f:
             for sentence in sentences:
-                f.write(sentence + "\n")
+                f.write(sentence + "\n\n")
 
 
 if __name__ == "__main__":
