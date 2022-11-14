@@ -5,7 +5,7 @@ Given an input CSV with two columns of options and an input sentence, return all
 ## Usage Instructions:
 
 1) Download this Github repository to your computer.
-   1) The easiest way to do this is by clicking `Download Zip` on Github. Unzip the file, and move it to wherever you want the folder to live.
+   1) The easiest way to do this is by clicking `<> Code`, then `Download Zip` on Github. Unzip the file, and move it to wherever you want the folder to live.
 2) Open your Terminal, and navigate to the unzipped `sentence-permutations` folder you downloaded. You should be at the same level as the `sentence_permutations.py` file.
 3) Replace the `input.csv` file included in the folder with a file of the same format/name, but different contents. 
    1) The words listed in column "A" will replace the `AAA` sentence input. The words in column "B" will replace the `BBB` sentence input. 
@@ -19,4 +19,3 @@ Given an input CSV with two columns of options and an input sentence, return all
       Creating permutations for sentence: "The AAA lives in BBB."
       [0.00027s] Success! Sentence permutations have been generated to: 'output.csv'
       ```
-
