@@ -8,20 +8,21 @@ def sentence_permutations(sentence: str):
     with open("input.csv", mode="r") as input_csv:
         reader = csv.reader(input_csv, delimiter=",")
 
-        column_1 = set()
-        column_2 = set()
+        column_1 = []
+        column_2 = []
 
         for row in reader:
-            if row[0]:
-                column_1.add(row[0])
-            if row[1]:
-                column_2.add(row[1])
+            a, b = row[0], row[1]
+            if a and a not in column_1:
+                column_1.append(a)
+            if b and b not in column_2:
+                column_2.append(b)
 
-        sentences = [sentence.replace("AAA", i).replace("BBB", j) for i in list(column_1) for j in list(column_2)]
+        sentences = [sentence.replace("AAA", i).replace("BBB", j) for i in column_1 for j in column_2]
 
-        with open("output.csv", "w", newline='') as output_file:
-            wr = csv.writer(output_file, quoting=csv.QUOTE_ALL)
-            wr.writerow(sentences)
+        with open("output.txt", "w") as f:
+            for sentence in sentences:
+                f.write(sentence + "\n")
 
 
 if __name__ == "__main__":
