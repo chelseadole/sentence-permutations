@@ -5,8 +5,6 @@ import time
 
 
 def sentence_permutations(sentence: str):
-    output_list = []
-
     with open("input.csv", mode="r") as input_csv:
         reader = csv.reader(input_csv, delimiter=",")
 
