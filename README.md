@@ -12,7 +12,7 @@ Given an input CSV with two columns of options and an input sentence, return all
    2) You can also directly edit the `input.csv` file, but it makes no difference whether you replace it or edit as long as the name is correct.
 4) Back at the terminal, run the `sentence_permutations.py` Python file with your desired sentence as the only input. Your sentence must be contained in double quotes, and have both `AAA` and `BBB` present as variables for the script to replace with words from the CSV.
    1) EX: ```python sentence_permutations.py --sentence "The XXX lives in YYY."```
-   2) EX: ```python sentence_permutations.py --sentence "In YYY, he placed XXX on the table.```
+   2) EX: ```python sentence_permutations.py --sentence "In YYY, he placed XXX on the table."```
       1) "XXX" and "YYY" can be present in any order within the sentence
 5) The script will complete, and create/replace a file called `output.csv` within the `sentence-permutations` folder with sentence permutations. The script will show you this output at your terminal as well:
    1) ```shell
